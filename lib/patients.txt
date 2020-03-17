@@ -1,0 +1,24 @@
+{:Name=>"ehllo", :Phone=>"ehlloe", :Email=>"helkjdsf"}
+ 
+{:Name=>"help", :Phone=>"help", :Email=>"helpo"}
+ 
+{:Name=>"god", :Phone=>"god", :Email=>"god"}
+ 
+{:Name=>"georgia", :Phone=>"0415357444", :Email=>"georgia.z.leng@gmail.com"}
+ 
+{:Name=>"Liam", :Phone=>"928374", :Email=>"liam.email"}
+ 
+{:Name=>"test", :Phone=>"test", :Email=>"test"}
+ 
+{:Name=>"another test", :Phone=>"another test", :Email=>"another test"}
+ 
+{:Name=>"Georgia Zoi Leng", :Phone=>"0415357444", :Email=>"georgia.z.leng@gmail.com", :Travel=>"n"}
+ 
+{:Name=>"jjjj", :Phone=>"jjjj", :Email=>"jjjj", :Travel=>"n"}
+ 
+{:Name=>"Georgia", :Phone=>"jfhkjadhf", :Email=>"k;adsjfl;kdajf", :Travel=>"N"}
+ 
+{:Name=>"jesse", :Phone=>"78656345345", :Email=>"jesse.@gmail", :Travel=>"N"}
+ 
+{:Name=>"GEORGIA", :Phone=>"020202020", :Email=>"EMAIL", :Travel=>"N"}
+ 
