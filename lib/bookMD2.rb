@@ -24,11 +24,11 @@ end
 def day_select 
       prompt = TTY::Prompt.new
     day_choice = prompt.select("Select Appointment Day") do |menu|
-        menu.choice 'Monday', 1
-        menu.choice 'Tuesday', 2, disabled: '(no availabilities)' 
-        menu.choice 'Wednesday', 3, disabled: '(no availabilities)'
-        menu.choice 'Thursday', 4, disabled: '(no availabilities)'
-        menu.choice 'Friday', 5, disabled: '(no availabilities)'
+        menu.choice 'Monday', 'Monday'
+        menu.choice 'Tuesday', 'Tuesday', disabled: '(no availabilities)' 
+        menu.choice 'Wednesday', 'Wednesday', disabled: '(no availabilities)'
+        menu.choice 'Thursday', 'Thursday', disabled: '(no availabilities)'
+        menu.choice 'Friday', 'Friday', disabled: '(no availabilities)'
     end
       return day_choice
 end
@@ -46,11 +46,11 @@ end
     def dr_selection 
         prompt = TTY::Prompt.new
         dr_choice = prompt.select("Select Dr") do |menu|
-        menu.choice 'Dr Gregor', 1
-        menu.choice 'Dr. Helen', 2, disabled: '(no consultations available)'
-        menu.choice 'Dr. Kooray', 3, disabled: '(no consultations available)'  
-        menu.choice 'Dr. Weatley', 4, disabled: '(no consultations available)' 
-        menu.choice 'Dr. Chan', 5, disabled: '(no consultations available)' 
+        menu.choice 'Dr Gregor', 'Dr. Gregor' 
+        menu.choice 'Dr. Helen', 'Dr. Helen', disabled: '(no consultations available)'
+        menu.choice 'Dr. Kooray', 'Dr. Kooray', disabled: '(no consultations available)'  
+        menu.choice 'Dr. Weatley', 'Dr. Weatley', disabled: '(no consultations available)' 
+        menu.choice 'Dr. Chan', 'Dr. Chan', disabled: '(no consultations available)' 
     end
     return dr_choice 
     end
