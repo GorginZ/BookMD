@@ -1,6 +1,12 @@
-require "BookMD/version"
+require_relative "BookMD/version"
+require_relative "bookMD2.rb"
+require_relative "user.rb"
+# start
 
-module BookMD
-  class Error < StandardError; end
-  # Your code goes here...
-end
+p printer
+p new_appointment
+
+# module BookMD
+#   class Error < StandardError; end
+#   # Your code goes here...
+# end

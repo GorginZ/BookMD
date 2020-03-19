@@ -22,3 +22,95 @@
  
 {:Name=>"GEORGIA", :Phone=>"020202020", :Email=>"EMAIL", :Travel=>"N"}
  
+{:Name=>"test", :Phone=>"test", :Email=>"test", :Travel=>"N"}
+ 
+{:Name=>"", :Phone=>"", :Email=>"", :Travel=>""}
+ 
+{:Name=>"testy", :Phone=>"testy", :Email=>"testy", :Travel=>"N"}
+ 
+#<Patient:0x00007fa44c90d510>
+ 
+N
+ 
+#<Patient:0x00007fb88710aaf8>
+ 
+#<Patient:0x00007fccf48fc6e0>
+ 
+#<Patient:0x00007fc53687e418>
+ 
+#<Patient:0x00007fb94f01e5e0>
+ 
+{}
+ 
+{}
+ 
+{}
+ 
+n
+ 
+{:Name=>"OOOO", :Phone=>"OOOO", :Email=>"OOOO", :Travel=>"N"}
+ 
+{:Name=>"GEORGIA", :Phone=>"0415357444", :Email=>"GEORGIA.Z.LENG@GMAIL.COM", :Travel=>"N"}
+ 
+{:Name=>"hh", :Phone=>"hh", :Email=>"hh", :Travel=>"n"}
+ 
+{:Name=>"HELLO TEST", :Phone=>"HELLO TEST", :Email=>"HELLO TEST", :Travel=>"N"}
+ 
+{:Name=>"lima", :Phone=>"lima", :Email=>"lima", :Travel=>"n"}
+ 
+{:Name=>"ggg", :Phone=>"ggg", :Email=>"ggg", :Travel=>"n"}
+ 
+{:Name=>"aaaa", :Phone=>"aaa", :Email=>"aaa", :Travel=>"n"}
+ 
+{:Name=>"sss", :Phone=>"sss", :Email=>"sss", :Travel=>"n"}
+ 
+{:Name=>"uuu", :Phone=>"uuu", :Email=>"uu", :Travel=>"n"}
+ 
+{:Name=>"ffff", :Phone=>"ffff", :Email=>"fff", :Travel=>"n"}
+ 
+{:Name=>"555", :Phone=>"555", :Email=>"555", :Travel=>"n"}
+ 
+{:Name=>"gggg", :Phone=>"ggg", :Email=>"ggg", :Travel=>"n"}
+ 
+{:Name=>"kkkkk", :Phone=>"hhhh", :Email=>" bbbb", :Travel=>"n"}
+ 
+{:Name=>"vvvv", :Phone=>"vvvv", :Email=>"vvvv", :Travel=>"n"}
+ 
+
+ 
+
+ 
+
+ 
+{:Name=>"oop", :Phone=>"oop", :Email=>"oop", :Travel=>"n"}
+ 
+{:Name=>"poo", :Phone=>"poo", :Email=>"poo", :Travel=>"n"}
+ 
+{:Name=>"hill", :Phone=>"hill", :Email=>"lll", :Travel=>"n"}
+ 
+{:Name=>"dd", :Phone=>"dd", :Email=>"dd", :Travel=>"n"}
+ 
+{:Name=>"fefe", :Phone=>"fefe", :Email=>"fefe", :Travel=>"n"}
+ 
+{:Name=>"gtg", :Phone=>"gtg", :Email=>"gtg", :Travel=>"n"}
+ 
+{:Name=>"lol", :Phone=>"lol", :Email=>"lol", :Travel=>"n"}
+ 
+{:Name=>"dede", :Phone=>"dede", :Email=>"dede", :Travel=>"n"}
+ 
+{:Name=>"swsw", :Phone=>"swsw", :Email=>"swsw", :Travel=>"n"}
+ 
+{:Name=>"sx", :Phone=>"sx", :Email=>"sx", :Travel=>"n"}
+ 
+{:Name=>"l", :Phone=>"l", :Email=>"l", :Travel=>"n"}
+ 
+{:Name=>"a", :Phone=>"a", :Email=>"a", :Travel=>"n"}
+ 
+{:Name=>"a", :Phone=>"a", :Email=>"a", :Travel=>"n"}
+ 
+{:Name=>"aa", :Phone=>"a", :Email=>"a", :Travel=>"n"}
+ 
+{:Name=>"a", :Phone=>"a", :Email=>"a", :Travel=>"n"}
+ 
+{:Name=>"fuck you", :Phone=>"sad", :Email=>"no", :Travel=>"n"}
+ 

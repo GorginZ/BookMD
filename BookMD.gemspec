@@ -6,9 +6,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["GorginZ"]
   spec.email         = ["georgia.z.leng@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "GP appointment booker"
+  spec.description   = "Online appointment booker"
+  spec.homepage      = "https://github.com/GorginZ/BookMD/tree/master/lib"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
@@ -28,5 +28,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.add_dependency "tty-prompt", "~> 0.21.0"
   spec.add_dependency "tty-box", "~> 0.5.0"
-  spec.add_dependency "tty-table", "~.0.11.0"
+  spec.add_dependency "tty-table", "~> 0.11.0"
 end
