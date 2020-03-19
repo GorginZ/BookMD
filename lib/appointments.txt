@@ -1,0 +1,19 @@
+
+ 
+#<Appointments:0x00007fcf6895fd28>
+ 
+#<Appointments:0x00007fb57f087bb8>
+ 
+
+ 
+{:dr_choice=>1, :day_choice=>1, :time_choice=>["\"2.00\""]}
+ 
+{:dr_choice=>1, :day_choice=>1, :time_choice=>["\"2.00\""]}
+ 
+ 
+{:dr_choice=>1, :day_choice=>1, :time_choice=>["\"8.30\""]}
+ 
+{:dr_choice=>1, :day_choice=>1, :time_choice=>["\"8.30\""]}
+ 
+{:dr_choice=>1, :day_choice=>1, :time_choice=>["\"2.00\""]}
+ 

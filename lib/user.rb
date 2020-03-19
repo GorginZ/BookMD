@@ -9,7 +9,6 @@ class Patient
   self
 end
 
-
 def make_patient   #this method makes a patient from user input in terminal
   new_patient = Patient.new(:name, :phone, :email, :travel)
   patients = {}
@@ -30,7 +29,6 @@ print "Name: "
       'Email': @email,
       'Travel': @travel
     }
-
 end
 
 def printer    #this method takes the patient from make_patient method and adds it to txt file
@@ -44,27 +42,36 @@ end
 end
   
 class Appointments  
-  attr_accessor :dr_choice, :day_choice, :mon_time_selection
-  def initialize(dr_choice, day_choice, mon_time_selection)
-  @dr_choice = dr_selection
-  @day_choice = day_select
-  @mon_time_selection = mon_time_selection
+  attr_accessor :dr_choice, :day_choice, :time_choice
+  def initialize(dr_choice, day_choice, time_choice)
+  @dr_choice #= dr_selection
+  @day_choice #= day_select
+  @time_choice #= mon_time_selection
 end
 self
 end
 
 def new_appointment
-dr_choice = @dr_choice
-day_choice = @day_choice
-mon_time_selection = @mon_time_selection
+  the_appointment = Appointments.new(:dr_choice, :day_choice, :time_choice)
+appointments = {}
+appointments.store(:the_appointment,())
 
-the_appointment = Appointments.new(:dr_choice, :day_choice, :mon_time_selection)
-#puts the_appointment
+@dr_choice = dr_selection
+@day_choice = day_select
+@time_choice = mon_time_selection
+{
+'dr_choice': @dr_choice,
+'day_choice': @day_choice,
+'time_choice': @time_choice,
+}
 end
 
-#  p printer
-
-
-
-
-
+def appointment_printer    
+  separator = ' '
+  File.open("appointments.txt","a+") do |f|  #flag
+  
+      f.puts(new_appointment)
+      f.puts(separator)
+  
+  end
+  end

@@ -22,16 +22,7 @@ end
 
 
 def day_select 
-    #     prompt = TTY::Prompt.new
-    # choices = %w("Monday" "Tuesday" "Wednesday" "Thursday" "friday")
-    # day_choice = prompt.multi_select("Select Day", choices)
-    #     #   return time_choice
-    #    return day_choice
-# end
-        
-
-
-    prompt = TTY::Prompt.new
+      prompt = TTY::Prompt.new
     day_choice = prompt.select("Select Appointment Day") do |menu|
         menu.choice 'Monday', 1
         menu.choice 'Tuesday', 2, disabled: '(no availabilities)' 
@@ -39,59 +30,41 @@ def day_select
         menu.choice 'Thursday', 4, disabled: '(no availabilities)'
         menu.choice 'Friday', 5, disabled: '(no availabilities)'
     end
-
-      case
-      when day_choice == 'Monday'  #problem
-        dr_selection
-       mon_time_selection
-      end
-      return day_choice, mon_time_selection
+      return day_choice
 end
+
+
 
 def mon_time_selection 
     prompt = TTY::Prompt.new
     choices = %w("8.30" "2.00")
     time_choice = prompt.multi_select("Select time", choices)
-    #   return time_choice
-      puts time_choice 
+      return time_choice 
 end
     
 
     def dr_selection 
         prompt = TTY::Prompt.new
-    day_choice = prompt.select("Select Appointment Day") do |menu|
-        menu.choice 'Monday', 1
-        menu.choice 'Tuesday', 2, disabled: '(no consultations available)' 
-        menu.choice 'Wednesday', 3, disabled: '(no consultations available)' 
-        menu.choice 'Thursday', 4, disabled: '(no consultations available)' 
-        menu.choice 'Friday', 5, disabled: '(no consultations available)' 
+        dr_choice = prompt.select("Select Dr") do |menu|
+        menu.choice 'Dr Gregor', 1
+        menu.choice 'Dr. Helen', 2, disabled: '(no consultations available)'
+        menu.choice 'Dr. Kooray', 3, disabled: '(no consultations available)'  
+        menu.choice 'Dr. Weatley', 4, disabled: '(no consultations available)' 
+        menu.choice 'Dr. Chan', 5, disabled: '(no consultations available)' 
     end
-    return day_choice 
+    return dr_choice 
     end
   
-
-
 def start
     prompt = TTY::Prompt.new
     system("clear")
     first_menu = prompt.select("welcome to bookMD") do |menu|
-        menu.choice 'book_appointment'
-        menu.choice 'manage_appointments'
+        menu.choice 'book_appointment', 1
+        menu.choice 'manage_appointments', 2
     end
     return first_menu
 end    
 
-
- start  #move to main file DO NOT FORGET THIXS
- case
-when first_menu = 'book_appointment'  # this is broken always returns drs info even if first menu = manage_appointments
-    drs_info
-    day_select
-    dr_selection
-    mon_time_selection
-when first_menu = 'manage_appointments'
-   puts "current appointments"
-end
 
 
 
