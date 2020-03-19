@@ -43,7 +43,24 @@ File.open("patients.txt","a+") do |f|  #flag
 end
 end
   
+class Appointments  
+  attr_accessor :dr_choice, :day_choice, :mon_time_selection
+  def initialize(dr_choice, day_choice, mon_time_selection)
+  @dr_choice = dr_selection
+  @day_choice = day_select
+  @mon_time_selection = mon_time_selection
+end
+self
+end
 
+def new_appointment
+dr_choice = @dr_choice
+day_choice = @day_choice
+mon_time_selection = @mon_time_selection
+
+the_appointment = Appointments.new(:dr_choice, :day_choice, :mon_time_selection)
+#puts the_appointment
+end
 
 #  p printer
 

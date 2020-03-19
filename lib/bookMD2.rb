@@ -5,31 +5,14 @@ require 'tty-table'
 require 'tty-box'
 prompt = TTY::Prompt.new
 
-class Appointments  
-    attr_accessor :dr_choice, :day_choice, :mon_time_selection
-    def initialize(dr_choice, day_choice, mon_time_selection)
-    @dr_choice = dr_selection
-    @day_choice = day_select
-    @mon_time_selection = mon_time_selection
-end
-self
-end
 
-def new_appointment
-  dr_choice = @dr_choice
-  day_choice = @day_choice
-  mon_time_selection = @mon_time_selection
-
-the_appointment = Appointments.new(:dr_choice, :day_choice, :mon_time_selection)
-#puts the_appointment
-end
 
 
 def drs_info
     box = TTY::Box.frame(width: 30, height: 10, align: :center) do
         "info about docs specialisations etc"
       end
-    drs = TTY::Table.new header: ['Dr. Gregor','Dr. Helen Kouzmin','Dr Kooray','Dr. Sade Weatley','Dr. Patrick Chan'], rows: [['Monday', 'Monday','-----','-----','Monday',], ['Tuesday', 'Tuesday','Tuesday','Tuesday','Tuesday'], ['Wednesday', 'Wednesday','Wednesday','-----','Wednesday'],['Thursday', 'Thursday','Thursday','-----','Thursday'],['Friday', 'Friday','Friday','Friday','Friday']]
+    drs = TTY::Table.new header: ['Dr. Gregor ','Dr. Helen Kouzmin','Dr Kooray','Dr. Sade Weatley','Dr. Patrick Chan'], rows: [['Monday 8.30, 2.00', 'Monday','-----','-----','Monday',], ['Tuesday', 'Tuesday','Tuesday','Tuesday','Tuesday'], ['Wednesday', 'Wednesday','Wednesday','-----','Wednesday'],['Thursday', 'Thursday','Thursday','-----','Thursday'],['Friday', 'Friday','Friday','Friday','Friday']]
 # drs.render(:ascii)
 puts "availability for all doctors"
   puts box
@@ -39,52 +22,51 @@ end
 
 
 def day_select 
-  
-  
-   
-        prompt = TTY::Prompt.new
-    choices = %w("Monday" "Tuesday" "Wednesday" "Thursday" "friday")
-    day_choice = prompt.multi_select("Select Day", choices)
-        #   return time_choice
-          puts day_choice 
-        end
+    #     prompt = TTY::Prompt.new
+    # choices = %w("Monday" "Tuesday" "Wednesday" "Thursday" "friday")
+    # day_choice = prompt.multi_select("Select Day", choices)
+    #     #   return time_choice
+    #    return day_choice
+# end
         
 
 
-#     prompt = TTY::Prompt.new
-#     day_choice = prompt.select("Select Appointment Day") do |menu|
-#         menu.choice 'Monday'
-#         menu.choice 'Tuesday'
-#         menu.choice 'Wednesday'
-#         menu.choice 'Thursday'
-#         menu.choice 'Friday'
-#     end
+    prompt = TTY::Prompt.new
+    day_choice = prompt.select("Select Appointment Day") do |menu|
+        menu.choice 'Monday', 1
+        menu.choice 'Tuesday', 2, disabled: '(no availabilities)' 
+        menu.choice 'Wednesday', 3, disabled: '(no availabilities)'
+        menu.choice 'Thursday', 4, disabled: '(no availabilities)'
+        menu.choice 'Friday', 5, disabled: '(no availabilities)'
+    end
 
-#       case
-#       when day_choice == 'Monday'  #problem
-#         dr_selection
-#        mon_time_selection
-#       end
-#       return day_choice
-# end
-
+      case
+      when day_choice == 'Monday'  #problem
+        dr_selection
+       mon_time_selection
+      end
+      return day_choice, mon_time_selection
+end
 
 def mon_time_selection 
     prompt = TTY::Prompt.new
-choices = %w("8.30" "9.00")
-time_choice = prompt.multi_select("Select time", choices)
+    choices = %w("8.30" "2.00")
+    time_choice = prompt.multi_select("Select time", choices)
     #   return time_choice
       puts time_choice 
-    end
+end
     
 
     def dr_selection 
         prompt = TTY::Prompt.new
-    choices = %w('Dr.Gregor' 'Dr.Kouzmin' 'Dr.Kooray' 'Dr.Weatley' 'Dr.Chan')
-    dr_choice = prompt.multi_select("Select dr", choices)
-        #  return time_choice
-        
-    return dr_choice 
+    day_choice = prompt.select("Select Appointment Day") do |menu|
+        menu.choice 'Monday', 1
+        menu.choice 'Tuesday', 2, disabled: '(no consultations available)' 
+        menu.choice 'Wednesday', 3, disabled: '(no consultations available)' 
+        menu.choice 'Thursday', 4, disabled: '(no consultations available)' 
+        menu.choice 'Friday', 5, disabled: '(no consultations available)' 
+    end
+    return day_choice 
     end
   
 
@@ -102,10 +84,11 @@ end
 
  start  #move to main file DO NOT FORGET THIXS
  case
-when first_menu = 'book_appointment'
+when first_menu = 'book_appointment'  # this is broken always returns drs info even if first menu = manage_appointments
     drs_info
     day_select
-    dr_select
+    dr_selection
+    mon_time_selection
 when first_menu = 'manage_appointments'
    puts "current appointments"
 end

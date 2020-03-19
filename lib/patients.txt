@@ -114,3 +114,9 @@ n
  
 {:Name=>"fuck you", :Phone=>"sad", :Email=>"no", :Travel=>"n"}
  
+{:Name=>"HELLO BIG TEST", :Phone=>"HELLO BIG TEST", :Email=>"HELLO BIT ", :Travel=>"N"}
+ 
+{:Name=>"hjhj", :Phone=>"hjhj", :Email=>"hjhj", :Travel=>"n"}
+ 
+{:Name=>"HELLO", :Phone=>"HELLo", :Email=>"HELLo", :Travel=>"n"}
+ 
