@@ -3,10 +3,8 @@ require 'tty-prompt'
 require 'tty-reader'
 require 'tty-table'
 require 'tty-box'
+require 'artii'
 prompt = TTY::Prompt.new
-
-
-
 
 def drs_info
     box = TTY::Box.frame(width: 30, height: 10, align: :center) do
@@ -56,51 +54,34 @@ end
     end
   
 def start
-    prompt = TTY::Prompt.new
     system("clear")
-    first_menu = prompt.select("welcome to bookMD") do |menu|
-        menu.choice 'book_appointment', 1
-        menu.choice 'manage_appointments', 2
-    end
-    return first_menu
-end    
+ puts "1.  BOOK APPOINTMENT"
+ puts "2. VIEW YOUR APPOINTMENTS"
+ puts " >    "
+
+ selection = gets.chomp
+ if selection == "1"
+    drs_info
+  appointment_printer
+  printer
+  display_booking_to_user
+ elsif selection == "2"
+    puts the_appointment(book_appointment)
+ end
+end
 
 
 
 
-
-
-
-# puts new_appointment
-
-# def add(key_value)
-#     key_value.each do |key, value|
-#         @your_appointments[key] = value
-#     end
-#     self
-# end
-
-#   def keywords
-#     @your_appointments.keywords
-#   end
-
-
-# print @your_appointments
-
-
-
-# def booked_appointment(day_choice, dr_choice time_choice)
-#     your_appointment = day_select, dr_selection, mon_time_selection
-# end    
-
-# def confirm_booking_to_user(booked_appointment)
-#     box = TTY::Box.frame(width: 30, height: 10, align: :center) do
-#         your_appointment 
-#       end
+def display_booking_to_user
+    confirm = TTY::Box.frame(width: 30, height: 10, align: :center) do
+       "YOUR APPOINTMENT IS CONFIRMED"
+      end
+      puts confirm
     
-# end
+end
 
-# puts booked_appointment
+
 
 
 

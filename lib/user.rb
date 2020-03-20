@@ -72,6 +72,6 @@ def appointment_printer
   
       f.puts(new_appointment)
       f.puts(separator)
-  
   end
   end
+
