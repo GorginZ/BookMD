@@ -1,63 +1,33 @@
 
- 
-#<Appointments:0x00007fcf6895fd28>
- 
-#<Appointments:0x00007fb57f087bb8>
- 
+ Doctor Choice: Dr. Gregor
+Day Choice: Monday
+Time Choice: ["\"2.00\""]
 
- 
-{:dr_choice=>1, :day_choice=>1, :time_choice=>["\"2.00\""]}
- 
-{:dr_choice=>1, :day_choice=>1, :time_choice=>["\"2.00\""]}
- 
- 
-{:dr_choice=>1, :day_choice=>1, :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>1, :day_choice=>1, :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>1, :day_choice=>1, :time_choice=>["\"2.00\""]}
- 
-{:dr_choice=>1, :day_choice=>1, :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"2.00\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>[]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>[]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>[]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>[]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"2.00\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"8.30\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"2.00\""]}
- 
-{:dr_choice=>"Dr. Gregor", :day_choice=>"Monday", :time_choice=>["\"2.00\""]}
- 
+Doctor Choice: Dr. Gregor
+Day Choice: Monday
+Time Choice: ["\"8.30\""]
+
+Doctor Choice: Dr. Gregor
+Day Choice: Monday
+Time Choice: ["\"8.30\""]
+
+Doctor Choice: Dr. Gregor
+Day Choice: Monday
+Time Choice: ["\"8.30\""]
+
+Dr: Dr. Gregor
+Day Choice: Monday
+Time Choice: ["\"8.30\""]
+
+Dr: Dr. Gregor
+Day: Monday
+Time: ["\"8.30\""]
+
+Dr: Dr. Gregor
+Day: Monday
+Time: ["8.302.00"]
+
+Dr: Dr. Gregor
+Day: Monday
+Time: ["\"8.30\""]
+

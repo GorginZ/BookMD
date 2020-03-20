@@ -6,5 +6,4 @@ require 'artii'
 require 'colorize'
 require "artii"
 
-start 
-
+start
