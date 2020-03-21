@@ -31,3 +31,19 @@ Dr: Dr. Gregor
 Day: Monday
 Time: ["\"8.30\""]
 
+Dr: Dr. Gregor
+Day: Monday
+Time: ["\"8.30\""]
+
+Dr: Dr. Gregor
+Day: Monday
+Time: ["\"8.30\""]
+
+Dr: Dr. Gregor
+Day: Monday
+Time: ["\"8.30\""]
+
+Dr: Dr. Gregor
+Day: Monday
+Time: ["\"8.30\""]
+

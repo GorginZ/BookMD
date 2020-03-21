@@ -5,6 +5,7 @@ require 'tty-reader'
 require 'tty-table'
 require 'tty-box'
 require 'artii'
+require 'colorize'
 prompt = TTY::Prompt.new
 
 def drs_info
@@ -15,8 +16,8 @@ def drs_info
     drs = TTY::Table.new header: ['Dr. Gregor ','Dr. Helen Kouzmin','Dr Kooray','Dr. Sade Weatley','Dr. Patrick Chan'], rows: [['Monday 8.30, 2.00', 'Monday','-----','-----','Monday',], ['Tuesday', 'Tuesday','Tuesday','Tuesday','Tuesday'], ['Wednesday', 'Wednesday','Wednesday','-----','Wednesday'],['Thursday', 'Thursday','Thursday','-----','Thursday'],['Friday', 'Friday','Friday','Friday','Friday']]
 # drs.render(:ascii)
 
-  puts box
-puts drs.render(:ascii)
+  puts box.colorize(:color => :black, :background => :white)
+puts drs.render(:ascii).colorize(:color => :black, :background => :white)
 
 end
 
@@ -56,16 +57,17 @@ end
     end
     def start
         system("clear")
-        start_title = TTY::Box.frame(width: 50, height: 20, align: :left) do
-            "Welcome to BOOKMD\n \nTo view dr availability and book an appointment and select 1. \n \nTo manage and view your appointmrnts preass 2. \n \nTo make an appointment over the phone please call our rooms on 12345893.\n \nIF YOU ARE EXPERIENCING A MEDICAL EMERGENCY DIAL 000 \n \nIF YOU ARE EXPERIENCING FLU LIKE SYMPTOMS: HEADACHE, FEVER, ACHING, COUGHING, RESPATORY ISSUES MUST CALL THE PRACTICE PRIOR TO ATTENDING.\n \nMORE INFORMATION IS AVAILABLE AT THE COVID19 HOTLINE "
+        start_title = TTY::Box.frame(width: 50, height: 21, align: :left) do
+            "Welcome to BOOKMD\n" "\nTo view dr availability and book an appointment and type 1 and press ENTER. \n \nTo manage and view your appointmrnts type 2 and press ENTER. \n \nTo make an appointment over the phone please call our rooms on 12345893.\n \nIF YOU ARE EXPERIENCING A MEDICAL EMERGENCY DIAL 000.\n \nIF YOU ARE EXPERIENCING FLU LIKE SYMPTOMS: HEADACHE, FEVER, ACHING, COUGHING, RESPATORY ISSUES MUST CALL THE PRACTICE PRIOR TO ATTENDING.\n \nMORE INFORMATION IS AVAILABLE AT THE COVID19 HOTLINE "
            end
-           puts start_title
+           puts start_title.colorize(:color => :black, :background => :white)
 
      puts "1.  BOOK APPOINTMENT"
      puts "2. VIEW YOUR APPOINTMENTS"
      puts " >    "
      selection = gets.chomp
      if selection == "1"
+        system("clear")
         drs_info
         new_appointment
          printer
@@ -80,11 +82,13 @@ def display_booking_to_user
     confirm = TTY::Box.frame(width: 30, height: 10, align: :center) do
        "IF YOU NEED TO CANCEL YOUR APPOINTMENT ON THE SAME DAY OF YOUR APPOINTMENT PLEASE CALL THE ROOMS TO DO SO"
       end
-      puts confirm
+      puts confirm.colorize(:color => :black, :background => :white)
 end
 
+# def delete_appointment
 
 
+# end
 
 
  
