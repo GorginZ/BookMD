@@ -62,33 +62,41 @@ end
            end
            puts start_title.colorize(:color => :black, :background => :white)
 
-     puts "1.  BOOK APPOINTMENT"
-     puts "2. VIEW YOUR APPOINTMENTS"
-     puts " >    "
+     puts "1.  BOOK APPOINTMENT".colorize(:yellow)
+     puts "2. VIEW YOUR APPOINTMENTS".colorize(:yellow)
+     puts "3. DELETE APPOINTMENT".colorize(:yellow)
+     puts " >    ".colorize(:yellow)
+    
      selection = gets.chomp
-     if selection == "1"
+     case
+     when selection == "1"
         system("clear")
         drs_info
         new_appointment
          printer
       appointment_printer
-     display_booking_to_user
-     elsif selection == "2"
-        # puts the_appointment(book_appointment)
+     appointment_message
+     sleep(10)
+     start
+     when selection == "2"
+       system("clear")
         appointment_printer
+        appointment_message
+        sleep(10)
+        start
+     when selection == "3"
+        system("clear")
+        delete_appointment
+        puts "your appointment was deleted returning home in 10 seconds"
+        sleep(10)
+        start
      end
     end
-def display_booking_to_user
-    confirm = TTY::Box.frame(width: 30, height: 10, align: :center) do
-       "IF YOU NEED TO CANCEL YOUR APPOINTMENT ON THE SAME DAY OF YOUR APPOINTMENT PLEASE CALL THE ROOMS TO DO SO"
+def appointment_message
+    confirm = TTY::Box.frame(width: 30, height: 10, align: :left) do
+       "IF YOU NEED TO CANCEL YOUR APPOINTMENT ON THE SAME DAY OF YOUR APPOINTMENT PLEASE CALL THE ROOMS TO DO SO".colorize(:color => :black, :background =>:white)
       end
-      puts confirm.colorize(:color => :black, :background => :white)
+      puts confirm
+ 
 end
 
-# def delete_appointment
-
-
-# end
-
-
- 

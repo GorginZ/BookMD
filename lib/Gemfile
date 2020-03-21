@@ -8,8 +8,10 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem "tty-prompt"
 gem "tty-table"
 gem "tty-box"
+Gem "colorize"
 gem "artii"
 gem "simplecov"
-gem "jeweller"
+gem "jeweler"
+gem "fileutils"
 
 gem "colorize", "~> 0.8.1"

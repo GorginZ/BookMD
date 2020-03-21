@@ -13,6 +13,7 @@ def make_patient   #this method makes a patient from user input in terminal
   new_patient = Patient.new(:name, :phone, :email, :travel)
 patients = {}
 patients.store(:new_patient,())  
+print "Please answer each prompt and press ENTER\n".colorize(:yellow)
 print "Name: "
     @name = gets.chomp
     print "Phone: "
@@ -58,8 +59,7 @@ dr: @dr,
 day_choice: @day_choice,
 time_choice: @time_choice,
 }
-#TODO:I just made the individual lines write each hash item individually, you can add other stuff too
-#This needs to be movedd into the new appointment function for you to write to the txt file easily
+
 File.open("appointments.txt","a+") do |f|  #flag
   f.puts("Dr: #{new_appointment[:dr]}")
   f.puts("Day: #{new_appointment[:day_choice]}")
@@ -74,4 +74,15 @@ puts "These are your upcoming appointments:\n"
   File.open("appointments.txt").each do |line|
     puts line
   end
+end
+
+
+def delete_appointment
+  File.open("appointments.txt","w") do |out_file|  
+   File.foreach("appointments.txt") do |line|
+    out_file.puts line unless line =~ /First/
+   File.close
+   end
+  end
+  # FileUtils.mv()
 end
