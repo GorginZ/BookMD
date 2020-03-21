@@ -6,6 +6,7 @@ require 'tty-table'
 require 'tty-box'
 require 'artii'
 require 'colorize'
+require 'rubocop'
 prompt = TTY::Prompt.new
 
 def drs_info
