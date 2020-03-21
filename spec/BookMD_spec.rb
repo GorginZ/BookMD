@@ -1,9 +1,9 @@
-RSpec.describe BookMD do
-  it "has a version number" do
-    expect(BookMD::VERSION).not_to be nil
+RSpec.new_appointment do
+  it "writes the appointment to a txt file " do
+    expect(new_appointment::"appointsments.txt").not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
-  end
-end
+  # it "does something useful" do
+  #   expect(false).to eq(true)
+  # end
+# end

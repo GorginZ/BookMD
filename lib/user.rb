@@ -29,9 +29,9 @@ print "Name: "
       'Travel': @travel
     }
 end
-def printer    #this method takes the patient from make_patient method and adds it to txt file
+def printer    
 separator = ' '
-File.open("patients.txt","a+") do |f|  #flag
+File.open("patients.txt","a+") do |f|  #append flag
     f.puts(make_patient)
     f.puts(separator)
   #  puts patients
@@ -53,7 +53,7 @@ appointments.store(:the_appointment,())
 @dr = dr_selection
 @day_choice = day_select
 @time_choice = mon_time_selection
-#TODO: if you are using symbols as hash keys then you don't need the quotation marks
+
 new_appointment = {
 dr: @dr,
 day_choice: @day_choice,
@@ -67,7 +67,7 @@ File.open("appointments.txt","a+") do |f|  #flag
   f.puts("\n")
 end
 end
-#TODO: Modify this to print whatever you like - this will just read the file
+
 def appointment_printer
   puts("\n\n")
 puts "These are your upcoming appointments:\n"

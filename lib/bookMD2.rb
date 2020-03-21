@@ -4,7 +4,6 @@ require 'tty-prompt'
 require 'tty-reader'
 require 'tty-table'
 require 'tty-box'
-require 'artii'
 require 'colorize'
 prompt = TTY::Prompt.new
 

@@ -29,7 +29,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "tty-prompt", "~> 0.21.0"
   spec.add_dependency "tty-box", "~> 0.5.0"
   spec.add_dependency "tty-table", "~> 0.11.0"
-  spec.add_dependency "artii", "~> 2.1.2"
   spec.add_dependency "jeweler", "~> 2.3.9"
   spec.add_dependency "simplecov", "~> 0.9.0"
   spec.add_dependency "rspec", "~> 3.1.0"
