@@ -33,7 +33,8 @@ The aim of BookMD is to make appropriate care more accessible by allowing practi
 BookMD starts at a home menu with three pathways.
 
 <img src="images/firstmenu.png" width="400" >
-1 book appointment allows the user to view dr availability and select a dr.
+
+1 book appointment allows the user to view dr availability and select a dr, followed by appointment day via the same menu format.
 
 <img src="images/bookappointment1.png" width="400" >
 
