@@ -44,7 +44,7 @@ BookMD is just a mock appointment booker and isn't able to capture the dynamism 
 ## 1 - take user input and store as patient details.
 the make_patient method is called when the user progresses through the book appointment pathway. This method initializes a new object of the Patient class and assigns the attribute variables for name, phone, email and travel via gets-ing user input. 
 The scope of the Patinet class instance variables means I am able to attribute these values to new objects of this class in the make_patient method. 
-![](images/makepatient.png)
+![](images/patientcreation.png)
 
 ## 2- storing appointment-(DR, day and time) selection using a selection menu. 
 
