@@ -9,12 +9,13 @@ class Patient
   end
   self
 end
-def make_patient   #this method makes a patient from user input in terminal
+
+def make_patient   
   new_patient = Patient.new(:name, :phone, :email, :travel)
-patients = {}
-patients.store(:new_patient,())  
-print "Please answer each prompt and press ENTER\n".colorize(:yellow)
-print "Name: "
+  patients = {}
+  patients.store(:new_patient,())  
+  print "Please answer each prompt and press ENTER\n".colorize(:yellow)
+  print "Name: "
     @name = gets.chomp
     print "Phone: "
     @phone = gets.chomp
@@ -27,45 +28,47 @@ print "Name: "
       'Phone': @phone,
       'Email': @email,
       'Travel': @travel
-    }
+     }
 end
+
 def printer    
-separator = ' '
-File.open("patients.txt","a+") do |f|  #append flag
+  separator = ' '
+  File.open("patients.txt","a+") do |f|  
     f.puts(make_patient)
     f.puts(separator)
-  #  puts patients
+  end
 end
-end 
+
 class Appointments  
   attr_accessor :dr, :day_choice, :time_choice
   def initialize(dr, day_choice, time_choice)
-  @dr #= dr_selection
-  @day_choice #= day_select
-  @time_choice #= mon_time_selection
+    @dr 
+    @day_choice 
+    @time_choice 
+  end
+  self
 end
-self
-end
+
 def new_appointment
-the_appointment = Appointments.new(:dr, :day_choice, :time_choice)
-appointments = {}
-appointments.store(:the_appointment,())
-@dr = dr_selection
-@day_choice = day_select
-@time_choice = mon_time_selection
+  the_appointment = Appointments.new(:dr, :day_choice, :time_choice)
+  appointments = {}
+  appointments.store(:the_appointment,())
+    @dr = dr_selection
+    @day_choice = day_select
+    @time_choice = mon_time_selection
 
-new_appointment = {
-dr: @dr,
-day_choice: @day_choice,
-time_choice: @time_choice,
-}
+  new_appointment = {
+    dr: @dr,
+    day_choice: @day_choice,
+    time_choice: @time_choice,
+  }
 
-File.open("appointments.txt","a+") do |f|  #flag
-  f.puts("Dr: #{new_appointment[:dr]}")
-  f.puts("Day: #{new_appointment[:day_choice]}")
-  f.puts("Time: #{new_appointment[:time_choice]}")
-  f.puts("\n")
-end
+  File.open("appointments.txt","a+") do |f|  
+    f.puts("Dr: #{new_appointment[:dr]}")
+    f.puts("Day: #{new_appointment[:day_choice]}")
+    f.puts("Time: #{new_appointment[:time_choice]}")
+    f.puts("\n")
+  end
 end
 
 def appointment_printer
@@ -84,5 +87,4 @@ def delete_appointment
    File.close
    end
   end
-  # FileUtils.mv()
 end

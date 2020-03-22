@@ -4,4 +4,4 @@ require_relative "user.rb"
 require 'tty-prompt'
 require 'colorize'
 require 'fileutils'
-start
+  start
