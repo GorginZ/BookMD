@@ -99,13 +99,14 @@ Pathway
 Planning and development of project
 <img src="images/Trelloboard.png">
 
+this is my old repo - because I made this project a gem I created a new repo with the name of the application. 
+<img src="images/older repo.png">
 
-![](images/older repo.png) this is my old repo - because I made this project a gem I created a new repo with the name of the application. 
 
-##Testing
+## Testing
 I was unable to write a good rspec test due to time constraints, but was able to manually test throughout and have other people use my app who were unfamiliar with the pathways.
 
-One points of failure that are easily able to be reproduced are the error when the user provides invalid input in the first menu.
+One point of failure that are easily able to be reproduced are the error when the user provides invalid input in the first menu.
 
 Another is that the app deletes all appointments instead of just the last appointment, although this isn't so much an error as just a bad way to delete. 
 
