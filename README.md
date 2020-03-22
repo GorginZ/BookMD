@@ -2,19 +2,23 @@
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'BookMD'
+```
+gem install 'BookMD'
 ```
 
 And then execute:
 
     $ bundle install
-
-Or install it yourself as:
-
-    $ gem install BookMD
+    
+Dependencies:
+    
+        "fileutils", "~> 1.4.1" 
+        "simplecov", "~> 0.9.0"
+        "jeweler", "~> 2.3.9"
+        "tty-table", "~> 0.11.0"
+        "tty-box", "~> 0.5.0"
+        "tty-prompt", "~> 0.21.0"
+                
     
 ## Statement of purpose    
 BookMD is a mock online dr appointment booker. BookMD takes user input from an appointment selection as well as patient information and writes this to text files and reads these text files to display the selections back to the user. It also allows users to cancel their appointments and make a new appointment if they want to change the appointment time. BookMD will return the user to the home menu ten seconds after it completes the requested function and displays a message to confirm to the user it has completed the function and will return them 'home'.
@@ -29,6 +33,18 @@ The aim of BookMD is to make appropriate care more accessible by allowing practi
 
 
 ## Usage
+
+To run open terminal, run:
+    
+        "irb" 
+        
+Then:
+    
+        require "BookMd"         
+
+OR download all files and open the executable app in: 
+
+BookMd/bin
 
 BookMD starts at a home menu with three pathways.
 
