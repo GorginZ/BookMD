@@ -35,7 +35,7 @@ BookMD starts at a home menu with three pathways.
 1 book appointment allows the user to view dr availability and select a dr.
 <img src="images/bookappointment1.png" width="400" >
 user selects a time
-<img src="images/timeselectpng" width="400" >
+<img src="images/timeselect.png" width="400" >
 The appointment is displayed to the user and the user inputs their details which are written to a file.
 <img src="images/patientinfo.png" width="400" >
 <img src="images/eg.appointment.png" width="400" >
