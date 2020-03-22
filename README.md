@@ -41,9 +41,13 @@ BookMD starts at a home menu with three pathways.
 
 BookMD is just a mock appointment booker and isn't able to capture the dynamism or security necessary in a booking system but aims to capture three basic key functions through the executable console app:
 
-## 1 - take user input and store as patient details.
+## 1 - take user input and store as patient details in text file.
 the make_patient method is called when the user progresses through the book appointment pathway. This method initializes a new object of the Patient class and assigns the attribute variables for name, phone, email and travel via gets-ing user input. 
-The scope of the Patinet class instance variables means I am able to attribute these values to new objects of this class in the make_patient method. 
+The scope of the Patient class instance variables means I am able to attribute these values to new objects of this class in the make_patient method, as they are visible to the make_patient method. The make_patient method is called in the printer method, where I use the append flag in order to add the patients hash (variable) and it's new_patient objects into into the patients.txt file.
+
+Jesus Castello's contributions in Ruby guides provided a helpfulguide to passing flags through the command line when working with files in ruby code:
+
+https://www.rubyguides.com/2015/05/working-with-files-ruby/
 
 <img src="images/patientcreation.png" width="400" >
 
