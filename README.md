@@ -41,32 +41,58 @@ BookMD starts at a home menu with three pathways.
 
 BookMD is just a mock appointment booker and isn't able to capture the dynamism or security necessary in a booking system but aims to capture three basic key functions through the executable console app:
 
-## 1 - take user input and store as patient details.
+## 1 - take user input and store as patient details in text file.
 the make_patient method is called when the user progresses through the book appointment pathway. This method initializes a new object of the Patient class and assigns the attribute variables for name, phone, email and travel via gets-ing user input. 
-The scope of the Patinet class instance variables means I am able to attribute these values to new objects of this class in the make_patient method. 
-![](images/makepatient.png)
+The scope of the Patient class instance variables means I am able to attribute these values to new objects of this class in the make_patient method, as they are visible to the make_patient method. The make_patient method is called in the printer method, where I use the append flag in order to add the patients hash (variable) and it's new_patient objects into into the patients.txt file.
 
-## 2- storing appointment-(DR, day and time) selection using a selection menu. 
+Jesus Castello's contributions in Ruby guides provided a helpfulguide to passing flags through the command line when working with files in ruby code:
 
-## 3 -allowing to cancel appointments the user has created.
- BookMD handles user input that generates two kinds of class objects - patient objects, and appointment objects.
+https://www.rubyguides.com/2015/05/working-with-files-ruby/
+
+<img src="images/patientcreation.png" width="400" >
+
+## 2- creating and storing appointment (DR, day and time) using a selection menu. 
+The appointment is initialied as an object of the Appointments class. It's instance variables get their values from these methods below. I utilised the TTY gems TTY prompt's select and multi_select to get user input. These methods run if the user selects the Book Appointment pathway which utilizes a case conditionasl when loop as the pathway flow controller. I utilized the TTY prompt for my selection to eliminate the issue of invalid or accidental input from the user, and given the choices are always going to be fixed - based on the availability of appointments on particular days, this seemed appropriate. 
+
+More about the TTY toolkit can be found here:
+I utilized a number of the tty gems - prompt and table are the only I ended up keeping in my final app in the end
+
+https://ttytoolkit.org/
+https://medium.com/@reireynoso/tty-prompt-select-for-handling-user-inputs-aed13f46c8bc
+
+<img src="images/caseloop.png" width="400" >
+<img src="images/appointmentinfo.png" width="400" >
+
+
+
+## Managing appointments
+ Users are able to view the appointments they have made and delete them. The conditional loop seen above will run the delete appointment method if the user input is '3' in the main selection menu. The delete method runs, opens the appointments text file and deletes (using the out_file file method) the line with the appointment. I have had trouble with this deleting all appointments if there are multiple appointments, however.
+ 
+ I modified a block of code suggested in this forum where someone had a similar question to me. 
+ https://stackoverflow.com/questions/37515509/how-to-delete-specific-lines-in-text-file
+ 
+<img src="images/deleteappointment.png" width="400" >
+
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 Pathway
-![UML diagram goes here](images/UMLflowdiagram.png)
+<img src=images/UMLflowdiagram.png'>
+
 
 Planning and development of project
-![](images/Trelloboard.png)
+<img src="images/Trelloboard.png">
 
 
 ![](images/older repo.png) this is my old repo - because I made this project a gem I created a new repo with the name of the application. 
 
 ##Testing
 
-![](images/invalidinputissue.png) my app has a lot of bugs as things stand. 
+<img src="images/invalidinputissue.png" width="400"> 
+
+my app has a lot of bugs as things stand. 
 
 ## Contributing
 
