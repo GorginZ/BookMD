@@ -33,7 +33,7 @@ The aim of BookMD is to make appropriate care more accessible by allowing practi
 BookMD starts at a home menu with three pathways.
 <img src="images/firstmenu.png" width="400" >
 1 book appointment allows the user to view dr availability and select a dr.
-<img src="images/bookappointment.png" width="400" >
+<img src="images/bookappointment1.png" width="400" >
 user selects a time
 <img src="images/timeselectpng" width="400" >
 The appointment is displayed to the user and the user inputs their details which are written to a file.
