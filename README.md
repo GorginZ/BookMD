@@ -59,14 +59,15 @@ Pathway
 ![UML diagram goes here](images/UMLflowdiagram.png)
 
 Planning and development of project
-![](images/Trelloboard.png)
+<img src="images/Trelloboard.png">
 
 
 ![](images/older repo.png) this is my old repo - because I made this project a gem I created a new repo with the name of the application. 
 
 ##Testing
 
-<img src-"images/invalidinputissue.png" width-"100"> 
+<img src="images/invalidinputissue.png" width-"100"> 
+
 my app has a lot of bugs as things stand. 
 
 ## Contributing
