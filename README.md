@@ -44,7 +44,7 @@ BookMD is just a mock appointment booker and isn't able to capture the dynamism 
 ## 1 - take user input and store as patient details.
 the make_patient method is called when the user progresses through the book appointment pathway. This method initializes a new object of the Patient class and assigns the attribute variables for name, phone, email and travel via gets-ing user input. 
 The scope of the Patinet class instance variables means I am able to attribute these values to new objects of this class in the make_patient method. 
-![](images/patientcreation.png)
+<img src="images/patientcreation.png" width="50" >
 
 ## 2- storing appointment-(DR, day and time) selection using a selection menu. 
 
@@ -56,7 +56,8 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 Pathway
-![UML diagram goes here](images/UMLflowdiagram.png)
+<img src=images/UMLflowdiagram.png'>
+
 
 Planning and development of project
 <img src="images/Trelloboard.png">
@@ -66,7 +67,7 @@ Planning and development of project
 
 ##Testing
 
-<img src="images/invalidinputissue.png" width-"100"> 
+<img src="images/invalidinputissue.png" width="100"> 
 
 my app has a lot of bugs as things stand. 
 
