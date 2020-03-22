@@ -61,7 +61,7 @@ https://ttytoolkit.org/
 https://medium.com/@reireynoso/tty-prompt-select-for-handling-user-inputs-aed13f46c8bc
 
 <img src="images/caseloop.png" width="400" >
-<img src="images/appointmentinfo.png" width="400" >
+<img src="images/appointment.info.png" width="400" >
 
 
 
