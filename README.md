@@ -51,10 +51,28 @@ https://www.rubyguides.com/2015/05/working-with-files-ruby/
 
 <img src="images/patientcreation.png" width="400" >
 
-## 2- storing appointment-(DR, day and time) selection using a selection menu. 
+## 2- creating and storing appointment (DR, day and time) using a selection menu. 
+The appointment is initialied as an object of the Appointments class. It's instance variables get their values from these methods below. I utilised the TTY gems TTY prompt's select and multi_select to get user input. These methods run if the user selects the Book Appointment pathway which utilizes a case conditionasl when loop as the pathway flow controller. I utilized the TTY prompt for my selection to eliminate the issue of invalid or accidental input from the user, and given the choices are always going to be fixed - based on the availability of appointments on particular days, this seemed appropriate. 
 
-## 3 -allowing to cancel appointments the user has created.
- BookMD handles user input that generates two kinds of class objects - patient objects, and appointment objects.
+More about the TTY toolkit can be found here:
+I utilized a number of the tty gems - prompt and table are the only I ended up keeping in my final app in the end
+
+https://ttytoolkit.org/
+https://medium.com/@reireynoso/tty-prompt-select-for-handling-user-inputs-aed13f46c8bc
+
+<img src="images/caseloop.png" width="400" >
+<img src="images/appointmentinfo.png" width="400" >
+
+
+
+## Managing appointments
+ Users are able to view the appointments they have made and delete them. The conditional loop seen above will run the delete appointment method if the user input is '3' in the main selection menu. The delete method runs, opens the appointments text file and deletes (using the out_file file method) the line with the appointment. I have had trouble with this deleting all appointments if there are multiple appointments, however.
+ 
+ I modified a block of code suggested in this forum where someone had a similar question to me. 
+ https://stackoverflow.com/questions/37515509/how-to-delete-specific-lines-in-text-file
+ 
+<img src="images/deleteappointment.png" width="400" >
+
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
