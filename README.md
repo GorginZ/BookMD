@@ -22,13 +22,21 @@ BookMD is a mock online dr appointment booker. BookMD takes user input from an a
 ## A problem BookMD helps to solve...
 (...)is the dr selection process. Booking online isn't really any simpler or easier in terms of user experience and this is reflected in any online appointment booking app that most of us have used - but online booking can address some other issues people may have if attending a practice as a new patient. An app that displays dr availability and also provides profiles with Dr information, areas of interest and the like provides something that can't be done on the phone and allows for people (especially new patients) to select a practitioner they feel meets their needs as a patient. 
 
-BookMD is just a mock appointment booker and isn't able to capture the dynamism or security necessary in a booking system and only aims to capture three key functions.
+## BookMD and ethical issues
+Any real appointment booker handling personal information and health information raises obvoius issues about how the data is stored, obtained and accessed, these are fairly broad and well understood issues so instead I would like to aknoelrdge this but instead comment on issues that would be specific to a medical appointment services (given my app is a mock booker and isn't actually handling data). 
 
-1 - take user input and store as patient details.
+The aim of BookMD is to make appropriate care more accessible by allowing practices to have profiles for their GPs and help people find care more appropriate for them. Many women or chronic pain sufferers struggle navigating the medical industry and landing themselves a good regular GP because you just have to go and see what they're like - reviews aren't particularly useful and can often be misguided if people just didnt like the dr on an interpersonal level - what can be ueful is GPs who have special areas of interest being able to state their history and experience clearly in a profile. BookMD in the spirit of this goal would also not allow non-bulk billing practices or practices that don't do workcover or tac work to use their platform.
 
-2- storing appointment selection using a selection menu. 
+BookMD is just a mock appointment booker and isn't able to capture the dynamism or security necessary in a booking system but aims to capture three basic key functions through the executable console app:
 
-3 -allowing to cancel appointments the user has created.
+## 1 - take user input and store as patient details.
+
+## 2- storing appointment-(DR, day and time) selection using a selection menu. 
+
+## 3 -allowing to cancel appointments the user has created.
+
+## The target audience for BookMD 
+...is anyone looking for a new general practitioner. 
 
 ## Usage
 
