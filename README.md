@@ -28,12 +28,22 @@ Any real appointment booker handling personal information and health information
 The aim of BookMD is to make appropriate care more accessible by allowing practices to have profiles for their GPs and help people find care more appropriate for them. Many women or chronic pain sufferers struggle navigating the medical industry and landing themselves a good regular GP because you just have to go and see what they're like - reviews aren't particularly useful and can often be misguided if people just didnt like the dr on an interpersonal level - what can be ueful is GPs who have special areas of interest being able to state their history and experience clearly in a profile. BookMD in the spirit of this goal would also not allow non-bulk billing practices or practices that don't do workcover or tac work to use their platform.
 
 
-
-
-
 ## Usage
 
 BookMD starts at a home menu with three pathways.
+<img src="images/firstmenu.png" width="400" >
+1 book appointment allows the user to view dr availability and select a dr.
+<img src="images/bookappointment.png" width="400" >
+user selects a time
+<img src="images/timeselectpng" width="400" >
+The appointment is displayed to the user and the user inputs their details which are written to a file.
+<img src="images/patientinfo.png" width="400" >
+<img src="images/eg.appointment.png" width="400" >
+
+If the user selects option 2 after they return to the home menu they are able to view their new appointment
+<img src="images/upcoming.appointments.png" width="400" >
+
+If the user selects option 3 their appointment is deleted and they are returned to the home menu.
 
 ## Development
 
@@ -65,7 +75,7 @@ https://medium.com/@reireynoso/tty-prompt-select-for-handling-user-inputs-aed13f
 
 
 
-## Managing appointments
+## 3 Managing appointments
  Users are able to view the appointments they have made and delete them. The conditional loop seen above will run the delete appointment method if the user input is '3' in the main selection menu. The delete method runs, opens the appointments text file and deletes (using the out_file file method) the line with the appointment. I have had trouble with this deleting all appointments if there are multiple appointments, however.
  
  I modified a block of code suggested in this forum where someone had a similar question to me. 
@@ -73,13 +83,8 @@ https://medium.com/@reireynoso/tty-prompt-select-for-handling-user-inputs-aed13f
  
 <img src="images/deleteappointment.png" width="400" >
 
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
 Pathway
-<img src=images/UMLflowdiagram.png'>
+<img src="images/UMLflowdiagram.png">
 
 
 Planning and development of project
@@ -89,10 +94,15 @@ Planning and development of project
 ![](images/older repo.png) this is my old repo - because I made this project a gem I created a new repo with the name of the application. 
 
 ##Testing
+I was unable to write a good rspec test due to time constraints, but was able to manually test throughout and have other people use my app who were unfamiliar with the pathways.
+
+One points of failure that are easily able to be reproduced are the error when the user provides invalid input in the first menu.
+
+Another is that the app deletes all appointments instead of just the last appointment, although this isn't so much an error as just a bad way to delete. 
 
 <img src="images/invalidinputissue.png" width="400"> 
 
-my app has a lot of bugs as things stand. 
+
 
 ## Contributing
 
