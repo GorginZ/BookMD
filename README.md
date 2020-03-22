@@ -1,9 +1,16 @@
 # BookMD
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/BookMD`. To experiment with that code, run `bin/console` for an interactive prompt.
+# images in readmes
+![UML diagram goes here](images/UMLflowdiagram.png)
 
-TODO: Delete this and the text above, and describe your gem
 
+![](images/Trelloboard.png)
+
+
+![](images/older repo.png) this is my old repo - because I made this project a gem I created a new repo with the name of the application. 
+
+
+![](images/invalidinputissue.png) my app has a lot of bugs as things stand. 
 ## Installation
 
 Add this line to your application's Gemfile:
