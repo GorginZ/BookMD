@@ -66,7 +66,8 @@ Planning and development of project
 
 ##Testing
 
-![](images/invalidinputissue.png) my app has a lot of bugs as things stand. 
+<img src-"images/invalidinputissue.png" width-"100"> 
+my app has a lot of bugs as things stand. 
 
 ## Contributing
 
